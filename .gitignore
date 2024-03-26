@@ -3,4 +3,5 @@
 !screenshots/*.png
 *.swp
 __pycache__
-
+.vscode
+!plot1.png

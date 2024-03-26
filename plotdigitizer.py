@@ -286,7 +286,7 @@ class MainApplication:
         self.plotwdg.setFocus()
 
 #        self.image_data = ImageFile('screenshot_22Jul2020.png')
-        self.image_data = ImageFile('BSS214N-Plot3.png')
+        self.image_data = ImageFile('plot1.png')
         self.image_data.plot_image(self.plotwdg.ax_main)
         self.image_data.plot_image(self.plotwdg.ax_inset)
 
