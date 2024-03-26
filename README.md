@@ -1,10 +1,14 @@
-# Python Plot Digitizer
+# MPP Calculator
+
+This is a Maximum Power Point (MPP) calculator designed for Voltage vs Current plots of harvester units. It includes a plot digitizer, forked from [PythonPlotDigitizer](https://github.com/sjgallagher2/PythonPlotDigitizer).
+
+## Python Plot Digitizer
 
 This is a plot digitizer written in Python using PyQt5 and Matplotlib. With an interface inspired partly by [WebPlotDigitizer](https://automeris.io/WebPlotDigitizer/), this app (with only 2 source files!) can handle multiple datasets with different plotting options, and can save the data, sorted, to csv. Linear, semi-log, and log-log plots are supported. 
 
 
 
-## Quick Guide
+### Quick Guide
 
 Using the Python Plot Digitizer goes like this:
 
@@ -15,7 +19,7 @@ Using the Python Plot Digitizer goes like this:
 
 
 
-### Features Not Yet Implemented
+#### Features Not Yet Implemented
 
 The following are not yet implemented:
 
@@ -26,7 +30,7 @@ The following are not yet implemented:
 
 
 
-## Screenshots
+### Screenshots
 
 
 
