@@ -52,3 +52,19 @@ The following are not yet implemented:
 
 ![Screenshot 2](screenshots/screenshot_28Jul2020_3.png)
 
+## MPP Calculator
+
+The MPP Calculator is a tool designed to analyze Voltage vs Current plots of harvester units and identify their Maximum Power Point (MPP). It is built upon the Python Plot Digitizer, which facilitates the digitization of plots for further analysis.
+
+### Features
+
+- Analyzes voltage-current plots to determine the MPP.
+- Provides visualization of the plot with the identified MPP highlighted.
+- Outputs the MPP data in a CSV file format for further analysis.
+
+#### Usage
+
+To use the MPP Calculator:
+1. Provide the Voltage vs Current plot data.
+2. Run the calculator script.
+3. Obtain the MPP data and visual representation of the plot with MPP highlighted for analysis.
