@@ -28,30 +28,6 @@ The following are not yet implemented:
 * Redo - Use Ctrl-R to re-add a datapoint after deletion
 * Help - A help window to remind you how to use the application
 
-
-
-### Screenshots
-
-
-
-![Screenshot 1](screenshots/screenshot_28Jul2020.png)
-
-
-
-
-
-![Screenshot 2](screenshots/screenshot_28Jul2020_1.png)
-
-
-
-![Screenshot 2](screenshots/screenshot_28Jul2020_2.png)
-
-
-
-
-
-![Screenshot 2](screenshots/screenshot_28Jul2020_3.png)
-
 ## MPP Calculator
 
 The MPP Calculator is a tool designed to analyze Voltage vs Current plots of harvester units and identify their Maximum Power Point (MPP). It is built upon the Python Plot Digitizer, which facilitates the digitization of plots for further analysis.
