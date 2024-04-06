@@ -414,9 +414,8 @@ class MainApplication:
         # Get position of figure in window
         figx = self.plotwdg.pos().x()
         figy = self.plotwdg.pos().y()
-        
-        self.textbox.move(figx+event.x,figy+figheight-event.y)
-        self.label_tb.move(figx+event.x,figy+figheight-event.y-30)
+        self.textbox.move(int(figx + event.x), int(figy + figheight - event.y))
+        self.label_tb.move(int(figx + event.x), int(figy + figheight - event.y - 30))
         self.textbox.setVisible(True)
         self.label_tb.setVisible(True)
 
