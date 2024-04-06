@@ -1,13 +1,20 @@
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
+import sys
 
 # Create the 'out' folder if it doesn't exist
 output_folder = 'out'
 os.makedirs(output_folder, exist_ok=True)
 
+# Get the CSV filename from command-line argument or use default 'digitized_data.csv'
+if len(sys.argv) > 1:
+    csv_filename = sys.argv[1]
+else:
+    csv_filename = 'digitized_data.csv'
+
 # Read the CSV file containing X and Y values
-data = pd.read_csv('digitized_data.csv', header=None, names=['X', 'Y'])
+data = pd.read_csv(csv_filename, header=None, names=['X', 'Y'])
 
 # Compute (X * Y) for each row
 data['X_times_Y'] = data['X'] * data['Y']

@@ -38,9 +38,12 @@ The MPP Calculator is a tool designed to analyze Voltage vs Current plots of har
 - Provides visualization of the plot with the identified MPP highlighted.
 - Outputs the MPP data in a CSV file format for further analysis.
 
-#### Usage
+### Usage
 
 To use the MPP Calculator:
 1. Provide the Voltage vs Current plot data.
-2. Run the calculator script.
+2. Run the calculator script, specifying the CSV filename as a command-line argument if necessary.
+   Example: `python mpp_calculator.py my_plot_data.csv`
 3. Obtain the MPP data and visual representation of the plot with MPP highlighted for analysis.
+
+If no CSV filename is provided, the calculator will default to using 'digitized_data.csv'.
