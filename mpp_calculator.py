@@ -27,22 +27,20 @@ mpp_data = pd.DataFrame({'Voltage': [max_power_point['X']], 'Current': [max_powe
 mpp_data.to_csv(os.path.join(output_folder, 'mpp.csv'), index=False)
 
 # Generate a plot with only the maximum power point
-plt.plot(data['X'], data['Y'], label='Original Data')
-plt.scatter(max_power_point['X'], max_power_point['Y'], color='red', label='Maximum Power Point')
-plt.xlabel('Voltage')
-plt.ylabel('Current')
-plt.title('Original Plot with Maximum Power Point')
+plt.plot(data['X'], data['Y'])
+plt.scatter(max_power_point['X'], max_power_point['Y'], color='red', label='MPP')
+plt.xlabel('Voltage (V)')
+plt.ylabel('Current (mA)')
 plt.legend()
 plt.grid(True)
 plt.savefig(os.path.join(output_folder, 'original_plot.png'))
 plt.close()
 
-# Generate a plot with X on the x-axis and X*Y on the y-axis, renamed to mpp_plot.png
-plt.plot(data['X'], data['X_times_Y'], label='Voltage vs Power')
-plt.scatter(max_power_point['X'], max_power_point['X_times_Y'], color='red', label='Maximum Power Point')
-plt.xlabel('Voltage')
-plt.ylabel('Power')
-plt.title('Plot of Voltage vs Power')
+# Generate a plot with V on the x-axis and P on the y-axis
+plt.plot(data['X'], data['X_times_Y'])
+plt.scatter(max_power_point['X'], max_power_point['X_times_Y'], color='red', label='MPP')
+plt.xlabel('Voltage (V)')
+plt.ylabel('Power (mW)')
 plt.legend()
 plt.grid(True)
 plt.savefig(os.path.join(output_folder, 'mpp_plot.png'))
